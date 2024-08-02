@@ -56,7 +56,7 @@ function displayExpenses(expensesToDisplay) {
 
 function updateTotal(expensesToUpdate) {
     const totalAmount = expensesToUpdate.reduce((total, expense) => total + expense.amount, 0);
-    document.getElementById('total-amount').textContent = $${totalAmount.toFixed(2)};
+    document.getElementById('total-amount').textContent = `$${totalAmount.toFixed(2)}`;
 }
 
 function clearInputs() {
